@@ -1,0 +1,31 @@
+.contactItem {
+  margin-bottom: 10px;
+
+  display: flex;
+}
+
+.contact {
+  font-weight: 400;
+  font-size: 16px;
+
+  margin: 0;
+  padding: 0 10px;
+}
+
+.btn {
+  font-weight: 400;
+  font-size: 12px;
+
+  border-radius: 5px;
+  border: 1px solid rgb(205, 205, 205);
+  background-color: #fff;
+
+  padding: 3px 5px 3px 5px;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5b97f6;
+  color: #fff;
+}
