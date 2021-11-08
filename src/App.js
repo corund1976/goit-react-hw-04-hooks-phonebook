@@ -10,8 +10,9 @@ import ContactList from './components/ContactList';
 
 function App() {
   // ленивая инициализация состояния = lazy state initialization
-  const localData = () => JSON.parse(window.localStorage.getItem('contacts'));
-  const [contacts, setContacts] = useState(localData ?? []);
+  const [contacts, setContacts] = useState(() => {
+    return JSON.parse(window.localStorage.getItem('contacts')) ?? [];
+  });
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
